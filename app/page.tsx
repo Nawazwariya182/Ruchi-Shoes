@@ -7,11 +7,9 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Products } from "@/components/products"
-import { CTA } from "@/components/cta"
 import { LocationSection } from "@/components/location-section"
 import { Footer } from "@/components/footer"
 import CurvedLoop from "@/components/CurvedLoop"
-import MagicBento from "@/components/bento"
 
 export default function HomePage() {
   const [showSplash, setShowSplash] = useState(true)

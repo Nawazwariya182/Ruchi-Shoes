@@ -1,6 +1,6 @@
 "use client"
 
-import { Instagram, Twitter, Facebook, MessageCircleMore } from "lucide-react"
+import { Instagram, MessageCircleMore } from "lucide-react"
 import Image from "next/image"
 
 const footerSections = [

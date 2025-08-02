@@ -1,5 +1,4 @@
 import Spline from "@splinetool/react-spline"
-import CurvedLoop from "./CurvedLoop"
 export function Hero() {
   return (
     <section className="relative pt-20 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
