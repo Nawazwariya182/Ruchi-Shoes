@@ -27,14 +27,14 @@ export function Hero() {
             <div className="text-center space-y-10">
               {/* Premium Text */}
               <div className="absolute top-2 left-4 pointer-events-none">
-          <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-black text-white tracking-[0.1em] md:tracking-[0.1em] uppercase drop-shadow-sm z-10" style={{WebkitTextStroke: '2px black'}}>
+          <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-black text-white tracking-[0.1em] md:tracking-[0.1em] uppercase z-10" style={{WebkitTextStroke: '2px black'}}>
             Premium
           </h1>
               </div>
               
               {/* Footwear Text */}
-              <div className="absolute bottom-[120px] right-1 sm:bottom-[120px] md:bottom-[120px] md:right-1 lg:bottom-[120px] lg:right-1 xl:bottom-[120px] xl:right-5 pointer-events-none z-1">
-          <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white tracking-[0.1em] md:tracking-[0.1em] uppercase drop-shadow-sm" style={{WebkitTextStroke: '1px black'}}>
+              <div className="absolute bottom-[120px] right-3 sm:bottom-[120px] sm:right-0 md:bottom-[120px] md:right-1 lg:bottom-[120px] lg:right-1 xl:bottom-[120px] xl:right-5 pointer-events-none z-1">
+          <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white tracking-[0.1em] md:tracking-[0.1em] uppercase" style={{WebkitTextStroke: '1px black'}}>
             Footwear
           </h2>
           <div className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-px bg-black/40 mx-auto mt-2 sm:mt-3 md:mt-4 lg:mt-6 xl:mt-8"></div>

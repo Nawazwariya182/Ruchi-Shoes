@@ -23,7 +23,7 @@ export function LocationSection() {
   }
 
   return (
-    <section className="py-25 h-[1150px] sm:h-[1000px] md:h-[1000px] lg:h-[610px] xl:[610px] bg-white">
+    <section className="py-25 h-[1200px] sm:h-[1000px] md:h-[1000px] lg:h-[610px] xl:[610px] bg-white">
       <div className="container mx-auto px-6">
       <div className="text-center mb-16">
         <h2 className="text-5xl font-light mb-6 tracking-tight">
