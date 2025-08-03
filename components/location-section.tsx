@@ -41,8 +41,8 @@ export function LocationSection() {
             <div className="relative flex px-4 py-3 justify-center items-center">
             <div className="relative w-full h-96 rounded-2xl overflow-hidden">
           <Image
-          src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqs_edzYKBLOVBCTqzdibfslg6PdQYYZm-j_nz4CkaGcJ_Lahbkh5I-u74Y-dcz9HtZ_bwcl0e5Na8ior-maeK3kqFujibcUvKYSa7eg2gC9e18_JQGOXRMqZQ8mtnG4kapIZo=s1360-w1360-h1020-rw"
-          alt="STRIDE Flagship Store"
+          src="./shop.webp"
+          alt="Ruchi Shoes"
           fill
           className="object-cover border border-black border-5 rounded-2xl"
           />

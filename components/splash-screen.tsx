@@ -13,6 +13,23 @@ export function SplashScreen() {
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$#@%"
     let interval: NodeJS.Timeout
 
+    // Preload Spline scene properly
+    const preloadSpline = async () => {
+      try {
+        // Preload the Spline scene file
+        await fetch('https://prod.spline.design/kD4uSU-wRdaA39bF/scene.splinecode')
+        
+        // Store in window object for hero component to use
+        if (typeof window !== 'undefined') {
+          window.splinePreloaded = true
+        }
+      } catch (error) {
+        console.warn('Spline preload failed:', error)
+      }
+    }
+    
+    preloadSpline()
+
     // Matrix text effect
     const matrixInterval = setInterval(() => {
       const randomText = Array(8)
@@ -51,7 +68,7 @@ export function SplashScreen() {
       <div className="relative w-48 h-48 mb-8">
         <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="Logo"
             className="object-contain rounded-full"
             width={192}

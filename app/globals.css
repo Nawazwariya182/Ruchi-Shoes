@@ -159,18 +159,7 @@ a:hover~.custom-cursor,
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Custom inverse cursor */
-.custom-cursor {
-  width: 35px;
-  height: 35px;
-  border: 3px solid white;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
+
 
 /* Smoother click animation */
 @keyframes click {

@@ -13,7 +13,7 @@ export function Header() {
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Logo"
                 className="object-contain rounded-full"
                 width={192}
@@ -21,7 +21,7 @@ export function Header() {
               />
             </div>
             <span className="font-bold text-3xl tracking-normal">Ruchi Shoes</span>
-          </div>
+            </div>
 
           {/* Golden line separator */}
           <div className="flex-1 flex justify-center"></div>

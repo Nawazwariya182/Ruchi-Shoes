@@ -1,5 +1,17 @@
 import Spline from "@splinetool/react-spline"
+import { useState, useEffect } from "react"
+
 export function Hero() {
+  const [splineLoaded, setSplineLoaded] = useState(false)
+  const [isPreloaded, setIsPreloaded] = useState(false)
+
+  useEffect(() => {
+    // Check if Spline was preloaded during splash screen
+    if (typeof window !== 'undefined' && window.splinePreloaded) {
+      setIsPreloaded(true)
+    }
+  }, [])
+
   return (
     <section className="relative pt-20 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
       {/* Background Elements */}
@@ -11,7 +23,16 @@ export function Hero() {
       {/* Spline 3D Component - Second layer */}
       <div className="relative w-full h-screen flex items-center justify-center">
         <div className="w-full h-full max-w-4xl pointer-events-none z-20">
-          <Spline scene="https://prod.spline.design/kD4uSU-wRdaA39bF/scene.splinecode" />
+          {!splineLoaded && !isPreloaded && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+            </div>
+          )}
+          <Spline 
+            scene="https://prod.spline.design/kD4uSU-wRdaA39bF/scene.splinecode"
+            style={{ background: 'transparent' }}
+            onLoad={() => setSplineLoaded(true)}
+          />
         </div>
 
         {/* Color Block - Third layer */}

@@ -26,7 +26,7 @@ export function Footer() {
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="Logo"
                   className="object-contain rounded-full"
                   width={192}
