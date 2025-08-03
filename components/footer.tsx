@@ -20,7 +20,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid lg:grid-cols-5 gap-12 justify-items-end">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
@@ -33,7 +33,7 @@ export function Footer() {
                   height={192}
                 />
               </div>
-              <span className="font-bold text-2xl tracking-tight">RUCHI</span>
+            <span className="font-bold text-3xl tracking-normal">Ruchi Shoes</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Trusted destination for quality shoes at honest prices since 1965.

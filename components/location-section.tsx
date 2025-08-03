@@ -23,7 +23,7 @@ export function LocationSection() {
   }
 
   return (
-    <section className="py-25 bg-white">
+    <section className="py-25 h-[1050px] sm:h-[1000px] md:h-[1000px] lg:h-[610px] xl:[610px] bg-white">
       <div className="container mx-auto px-6">
       <div className="text-center mb-16">
         <h2 className="text-5xl font-light mb-6 tracking-tight">
@@ -35,7 +35,7 @@ export function LocationSection() {
       </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
           <div className="grid lg:grid-cols-2 items-center min-h-[400px]">
             {/* Left Side - Store Image */}
             <div className="relative flex px-4 py-3 justify-center items-center">

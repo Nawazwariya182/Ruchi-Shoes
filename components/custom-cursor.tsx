@@ -5,8 +5,16 @@ import { useState, useEffect } from "react"
 export function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [clicked, setClicked] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768 || 'ontouchstart' in window)
+    }
+
+    checkIfMobile()
+    window.addEventListener('resize', checkIfMobile)
+
     const updatePosition = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY })
     }
@@ -22,8 +30,11 @@ export function CustomCursor() {
     return () => {
       window.removeEventListener("mousemove", updatePosition)
       window.removeEventListener("click", handleClick)
+      window.removeEventListener('resize', checkIfMobile)
     }
   }, [])
+
+  if (isMobile) return null
 
   return (
     <div

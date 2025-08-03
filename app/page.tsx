@@ -33,7 +33,7 @@ export default function HomePage() {
       <Hero />
       <CurvedLoop
         marqueeText="Be ✦ Unique ✦ With ✦ Ruchi ✦ Shoes ✦"
-        speed={0.9}
+        speed={2}
         curveAmount={150}
         direction="left"
         interactive={false} />

@@ -147,7 +147,7 @@
 
 .custom-cursor.cursor-click {
   transform: translate(-50%, -50%) scale(1.5);
-  background: #ff0000;
+  background: transparent;
 }
 
 /* Hover effects for interactive elements */
