@@ -33,7 +33,7 @@ export function Hero() {
               </div>
               
               {/* Footwear Text */}
-              <div className="absolute bottom-[120px] right-3 sm:bottom-[120px] sm:right-0 md:bottom-[120px] md:right-1 lg:bottom-[120px] lg:right-1 xl:bottom-[120px] xl:right-5 pointer-events-none z-1">
+              <div className="absolute bottom-[140px] right-3 sm:bottom-[140px] sm:right-0 md:bottom-[120px] md:right-1 lg:bottom-[120px] lg:right-1 xl:bottom-[120px] xl:right-5 pointer-events-none z-1">
           <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white tracking-[0.1em] md:tracking-[0.1em] uppercase" style={{WebkitTextStroke: '1px black'}}>
             Footwear
           </h2>
