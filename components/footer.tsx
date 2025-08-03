@@ -20,7 +20,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-5 gap-12 justify-items-end">
+        <div className="grid lg:grid-cols-5 gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
